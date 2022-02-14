@@ -63,8 +63,7 @@ main {
 }
 
 .date {
-	opacity: .5;
 	margin-top: .2em;
-	letter-spacing: .2px;
+	letter-spacing: .5px;
 }
 </style>

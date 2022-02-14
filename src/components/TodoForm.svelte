@@ -49,8 +49,9 @@ import { onMount } from "svelte";
 
 <form on:submit|preventDefault={addTodo}>
 	<div>	
+		<label for="task-input">New todo</label>
 		<input type="text" id="task-input" name="title" bind:value={todoValue}>
-		<button type="submit">
+		<button type="submit" aria-label="Add todo" title="Add todo">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 				<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
 			</svg>
@@ -88,9 +89,15 @@ form > div > span {
 	pointer-events: none;
 }
 
+label[for="task-input"] {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
 form:focus-within > div > span {
 	bottom: -2.5em;
-	opacity: .5;
+	opacity: 1;
 }
 
 .hint {

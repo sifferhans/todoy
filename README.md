@@ -1,6 +1,7 @@
 # Todoy - A simple todo app for today
 
 This is a simple todo app created with SvelteKit, where the todo list is reset every day.
+It is a fully functioning Progressive Web App, and you can try it out [here](https://todoyapp.netlify.app/).
 
 ## Setup
 
@@ -22,7 +23,7 @@ npm run dev -- --open
 
 ## Building
 
-Before creating a production version of the app, install an run the build command:
+To build the app, run the build command:
 
 ```bash
 npm run build

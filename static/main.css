@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--hue: 270;
+	--transparency: 1;
+	--interface: hsla(var(--hue) 20% 93% / var(--transparency));
+	--interface-contrast: hsla(var(--hue) 10% 15% / var(--transparency));
+	--background: hsla(var(--hue) 30% 100% / var(--transparency));
+	--accent: hsla(var(--hue) 100% 50% / var(--transparency));
+	--error: hsla(340 100% 50% / var(--transparency));
+	--text: black;
+	--text-contrast: hsl(var(--hue) 20% 98%);
+
+	--toastColor: var(--text-contrast);
+	--toastBackground: var(--interface-contrast);
+	--toastBarBackground: var(--accent);
+	--toastBorderRadius: .5em;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	user-select: none;
+}
+
+body {
+	font-family: 'Inter', Arial, sans-serif;
+	accent-color: var(--accent);
+	color: var(--text);
+	background-color: var(--background);
+}
+
+body[data-theme="dark"] {
+	--text: hsl(var(--hue) 20% 98%);
+	--text-contrast: black;
+	--accent: hsl(var(--hue) 90% 70% / var(--transparency));
+	--interface: hsl(var(--hue) 10% 15% / var(--transparency));
+	--interface-contrast: hsl(var(--hue) 20% 93% / var(--transparency));
+	--background: hsl(var(--hue) 10% 10% / var(--transparency));
+	--error: hsl(340 100% 70% / var(--transparency));
+}

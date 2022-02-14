@@ -1,0 +1,18 @@
+{
+	"short_name": "Todoy",
+	"name": "Todoy - Todos for today",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	],
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#8551FC",
+	"description": "A simple todo app"
+}

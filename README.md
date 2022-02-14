@@ -22,7 +22,7 @@ npm run dev -- --open
 
 ## Building
 
-Before creating a production version of the app, install an run the build command:
+To build the app, run the build command:
 
 ```bash
 npm run build
